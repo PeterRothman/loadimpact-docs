@@ -6,9 +6,13 @@ categories: [test-scripting]
 order: 8
 ---
 
-Tags can be a powerful tool from a few different perspectives:
+***
 
-- Thresholds: specify thresholds on a subset of data points for a particular metric
+<h1>Background</h1>
+
+Tags are a powerful tool that allow you to analyze your data from a few different perspectives.  Some examples of this include:
+
+- Thresholds: specify thresholds on a subset of data points, based on things you 'tag'
 - Result analysis: slice and dice the data in Insights by filtering metric data points based on tags
 
 ## Tags with thresholds
