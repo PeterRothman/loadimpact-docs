@@ -4,7 +4,6 @@ title: Application Testing Methodology
 description: Application Testing Methodology
 categories: [testing-methodologies]
 order: 1
-hide: true
 ---
 
 ***
