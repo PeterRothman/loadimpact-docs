@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Application Testing Methodology
-description: Application Testing Methodology
+title: Getting Started Methodology
+description: A testing methodology to help you strategize and get started.
 categories: [testing-methodologies]
 order: 1
 hide: true
@@ -12,17 +12,21 @@ hide: true
 
 <h1>Background</h1>
 
-Successful testing starts with succesful planning. The intent of this document is to provide additonal guidance to best prepare you for testing and to meet your testing goals. This methodology assumes that some intitial performance testing is being done before automating testing in a CI/CD pipeline. Testing can be broken down into the following phases:
+As developers and testers we love to jump straight into the tools, but successful testing starts with successful planning. The intent of this document is to provide additional guidance to best prepare you for testing and to meet your testing goals. This methodology assumes that some intitial performance testing is being done before automating testing in a CI/CD pipeline. Testing can be broken down into the following phases:
 
 - TOC
 {:toc}
 
 This guide will speak from a high level on topics related to Load and Performance testing.
 
+## Phase 0 - It's a new tool, go explore!
+
+If you are like us here at Load Impact.  You will probably want to spend some time clicking around, trying things without any guidance, and seeing what happens when you click that button (yes, that one).  Go ahead and do that, think of questions you may have about the tool, they may get answered here.  If not, you can always ask us.
+
 
 ## Phase 1 - Planning, Test Configuration, and Validation
 
-Phase 1 is further broken down into multiple parts. Before you even run your first test, you should consider:
+Phase 1 is further broken down into multiple parts. Before you get started with real testing, we recommend that you:
 
 ### Planning
 
@@ -41,7 +45,7 @@ Once you have thought about these high level items, you should next move into cr
 
 ### Test Configuration
 
-Here are some more things to think about before you even write/record your first test script.
+Here are some tips to consider when you start to write/record your first test script:
 
 - What are the most common actions my user take as they relate to the important components I want to test?
   - _Login generally tends to be one important part of an application. What are others? If testing user journeys, what logical order do users of your application follow?_
@@ -55,7 +59,7 @@ Here are some more things to think about before you even write/record your first
 - What data do I need?
   - _Using the login example, testing the same user logging in will usually only test how well your system can cache responses. What data do you need to be parameterized to support your test executions?_
 
-Once you have those things in mind, you can start by either writing your scripts by hand or using the built in HAR file converter offered by k6 to put together your test scripts. **It's best to start small and then expand your test coverage. Treat writing your test scripts as you would code you are writing for your application by breaking it down into smaller, more manageable pieces.** A lot of value can be found in simple tests against the most important components.
+Keeping the above tips in mind, you should now start writing your scripts by hand or by using our [Chrome extension]({{ site.baseurl }}/4.0/how-to-tutorials/load-impact-version-4-chrome-extension/) or the built in [HAR file converter]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-convert-har-to-k6-test/)to create a test script. **It's best to start small and then expand your test coverage. Treat writing your test scripts as you would code you are writing for your application by breaking it down into smaller, more manageable pieces.** A lot of value can be found in simple tests against the most important components.
 
 **Best Practice Alert:** k6 supports modularization. The script you write to perform a login function with a random user, can later become it's own module in your load testing library. This can be shared with your team through version control or other means.
 
