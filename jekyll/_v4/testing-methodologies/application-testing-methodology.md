@@ -4,7 +4,6 @@ title: Getting Started Methodology
 description: A testing methodology to help you strategize and get started.
 categories: [testing-methodologies]
 order: 1
-hide: true
 ---
 
 ***
